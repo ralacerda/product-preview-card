@@ -1,0 +1,149 @@
+:root {
+  --cyan: hsl(158, 36%, 37%);
+  --dark-cyan: hsl(158, 66%, 15%);
+  --cream: hsl(30, 38%, 92%);
+  --dark: hsl(212, 21%, 14%);
+  --gray: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--gray);
+  background-color: var(--cream);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 16px;
+  font-size: 12px;
+}
+
+a:link,
+a:visited {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 300px auto;
+  height: 450px;
+  width: 600px;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+.flow > * + * {
+  margin-top: 21px;
+}
+
+.description {
+  padding: 32px;
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    grid-template-columns: auto auto;
+    grid-template-rows: 240px auto;
+    grid-auto-flow: column;
+    height: 610px;
+    width: 340px;
+    border-radius: 2%;
+    overflow: hidden;
+  }
+
+  .flow > * + * {
+    margin-top: 14px;
+  }
+
+  .description {
+    padding: 22px 22px;
+  }
+}
+
+p {
+  line-height: 1.6;
+}
+
+h1 {
+  line-height: 1;
+}
+
+.button {
+  background-color: var(--cyan);
+  color: var(--white);
+  text-transform: none;
+  border: 0;
+  width: 100%;
+  font-weight: 700;
+  padding: 14px;
+  border-radius: 6px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  background-color: var(--dark-cyan);
+}
+
+/* Utility */
+
+.font-bold {
+  font-weight: 700;
+}
+
+.serif {
+  font-family: 'Fraunces', serif;
+}
+
+.crossed {
+  text-decoration-line: line-through;
+}
+
+.text-cyan {
+  color: var(--cyan);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-lg {
+  font-size: 32px;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.space-out {
+  font-size: 12px;
+  letter-spacing: 5px;
+}
