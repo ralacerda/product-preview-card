@@ -24,43 +24,41 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <section>
-      <div class="card">
-        <picture id="photo">
-          <source
-            media="(max-width:720px)"
-            srcset="images/image-product-mobile.jpg"
-          />
-          <img
-            src="images/image-product-desktop.jpg"
-            alt="Gabrielle Essence Eau De Parfum Photo"
-          />
-        </picture>
-        <div class="description flow">
-          <div class="uppercase space-out">Perfume</div>
-          <h1 class="font-bold serif text-lg text-dark">
-            Gabrielle Essence Eau De Parfum
-          </h1>
-          <p>
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </p>
-          <div class="vertical-align price">
-            <div class="text-cyan font-bold text-lg serif">$149.99</div>
-            <div class="crossed text-sm">$169.99</div>
-          </div>
-          <button class="button">
-            <img src="images/icon-cart.svg" alt="" />
-            <div>Add to Cart</div>
-          </button>
+    <div class="card" role="main">
+      <picture id="photo">
+        <source
+          media="(max-width:720px)"
+          srcset="images/image-product-mobile.jpg"
+        />
+        <img
+          src="images/image-product-desktop.jpg"
+          alt="Gabrielle Essence Eau De Parfum Photo"
+        />
+      </picture>
+      <div class="description flow">
+        <div class="uppercase space-out">Perfume</div>
+        <h1 class="font-bold serif text-lg text-dark">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="vertical-align price">
+          <div class="text-cyan font-bold text-lg serif">$149.99</div>
+          <div class="crossed text-sm">$169.99</div>
         </div>
+        <button class="button">
+          <img src="images/icon-cart.svg" alt="" />
+          Add to Cart
+        </button>
       </div>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/ralacerda/">Renato Lacerda</a>.
-      </div>
-    </section>
+    </div>
+    <div class="attribution" role="footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/ralacerda/">Renato Lacerda</a>.
+    </div>
   </body>
 </html>
