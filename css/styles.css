@@ -7,14 +7,14 @@
   --white: hsl(0, 0%, 100%);
 }
 
-section {
+body {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--gray);
   background-color: var(--cream);
 }
@@ -110,7 +110,7 @@ h1 {
 }
 
 .serif {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
 }
 
 .crossed {
